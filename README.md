@@ -1,5 +1,3 @@
-![](readme-banner.jpg)
-
 # Libre Typography Font Collections
 
 Ce dépôt contient des collections de fontes libres et open-source, rassemblées par des étudiants de la classe GR451 de l'Eracom, Lausanne, durant l'après-midi du 3 novembre 2016.
