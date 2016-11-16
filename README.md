@@ -8,7 +8,7 @@ Nous espérons que ces sélections vous seront utiles!
 
 ## Voir les collections
 
-Consultez [cette page web](index.html) qui sert de table des matières.
+Consultez [cette page web](https://eracom-gr451.github.io/font-collections/) qui sert de table des matières.
 
 ## Pour en savoir plus
 
