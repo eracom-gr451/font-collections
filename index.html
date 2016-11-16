@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Collections de fontes libres &amp; open-source</title>
+
+  <!-- CSS  -->
+  <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <style>
+    .card-content h2 {
+      font-size: 130%;
+      font-weight: bold;
+      margin-top: 0;
+    }
+
+    .card-content p {
+      line-height: 1.3;
+    }
+    .card-action a {
+      display: block;
+    } 
+  </style>
+
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+  <script type="text/javascript">
+  	
+
+  	var data = {
+		    collections: [
+			    {   title : "Lineal_GO",
+			        cover : "Lineal_GO-01.jpg", 
+		            text : "Une sélection de fontes linéales, par Giada De Vittori et Trecy Henrioud.", 
+		            github : "Lineal-GO--TrecyGiada" 
+			    },
+			    {   title : "Triangular-Display",
+			    	cover : "Triangular-Display.png",
+			    	text : "Une sélection de fontes géométriques, par Rachel Gasser.", 
+		            github : "Triangular-Display" 
+			    },
+			    {   title : "Nouvo",
+			    	cover : "nouvo.jpg",
+			    	text : "Une sélection de fontes par Denis Alija et Lowis Pidoux.", 
+		            github : "Nouvo" 
+			    },
+			    {   title : "Sci-Fi-Experience",
+			    	cover : "SCI-FI.jpg",
+			    	text : "Une sélection de fontes futuristes, par Morgane Baudois et Bastian Capelli.", 
+		            github : "Sci-Fi-Experience-B-M" 
+			    },
+			    {   title : "Poster-Types",
+			    	cover : "PosterTypes.png",
+			    	text : "Une sélection de fontes pour affiches, par Nathan Meyer et Luca Reichenbach.", 
+		            github : "Poster-Types" 
+			    },
+			    {   title : "Avec et sans",
+			    	cover : "blue-gradient.jpg",
+			    	text : "Une sélection de fontes par Maëlle Amiet, Iris Gerbex et Julie Nançoz.", 
+		            github : "Avec-et-sans" 
+			    },
+			    {   title : "Sans-Sérif",
+			    	cover : "blue-gradient.jpg",
+			    	text : "Une sélection de fontes sans-sérif, par Alison Demierre et Coralie Faucherre.", 
+		            github : "fontes-sans-serif" 
+			    },
+			    {   title : "Popular Typefaces",
+			    	cover : "blue-gradient.jpg",
+			    	text : "Une sélection de fontes populaires, par Mathieu Mancion.", 
+		            github : "popular-typefaces" 
+			    }
+		    ]};
+  
+
+    var template = 	'{{#collections}}'+
+				'<div class="col s6 m4">'+
+			          '<div class="card">'+
+			            '<div class="card-image">'+
+			              '<img src="covers/{{cover}}">'+
+			            '</div>'+ // card-image
+			            '<div class="card-content">'+
+			              '<h2><a href="https://github.com/eracom-gr451/{{github}}/archive/master.zip">'+
+			              '{{title}}</a></h2>'+
+			              '<p>{{text}}</p>'+
+			            '</div>'+ // card-content
+			            '<div class="card-action">'+
+			              '<a href="https://github.com/eracom-gr451/{{github}}/archive/master.zip">Télécharger</a>'+
+			              '<a href="https://github.com/eracom-gr451/{{github}}/">Github</a>'+
+			            '</div>'+ // card-action
+			          '</div>'+ // card
+			        '</div>'+ // col s6 m4
+			    '{{/collections}}' ;
+
+  </script>
+
+</head>
+<body>
+
+  <div class="section no-pad-bot">
+    <div class="container">
+      <br><br>
+      <h1 class="header center teal-text text-lighten-2">Libre Typography Font Collections</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">Collections de fontes libres & open-source, <br>
+        réunies par les étudiant•e•s de la classe GR451 de l'Eracom</h5>
+      </div>
+      <br><br>
+
+      <div id="masonry-grid" class="row">
+		<!-- contenu dynamique ajouté par JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <div id="chart"></div>
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">GR451</h5>
+          <p class="grey-text text-lighten-4">Une classe d'étudiants en graphisme de l'Eracom.</p>
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Liens</h5>
+          <ul>
+            <li><a class="white-text" href="https://github.com/eracom-gr451">GitHub</a></li>
+            <li><a class="white-text" href="http://www.eracom.ch/">Eracom</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  
+  <script src="js/materialize.min.js"></script>
+  <script src="js/masonry.pkgd.min.js"></script>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+  <script src="js/init.js"></script>
+
+  <!-- mustache -->
+  
+  <script src="js/mustache.min.js"></script>
+
+  <script type="text/javascript">
+ 			
+ 			(function($){
+ 			
+ 			    $.fn.shuffle = function() {
+ 			        return this.each(function(){
+ 			            var items = $(this).children().clone(true);
+ 			            return (items.length) ? $(this).html($.shuffle(items)) : this;
+ 			        });
+ 			    }
+ 			    
+ 			    $.shuffle = function(arr) {
+ 			        for(var j, x, i = arr.length; i; j = parseInt(Math.random() * i), x = arr[--i], arr[i] = arr[j], arr[j] = x);
+ 			        return arr;
+ 			    }
+ 			    
+ 			})(jQuery);
+ 			
+      jQuery( document ).ready( function( $ ) { 
+
+		var html = Mustache.to_html(template, data);
+
+    var $html = $(html);
+
+    	// $( "#masonry-grid" ).html($html);
+
+    	$('#masonry-grid').append($html).masonry( 'appended', $html); 
+    	
+    	// $('#masonry-grid').shuffle();
+
+    	$('#masonry-grid').imagesLoaded( function(){
+		    $('#masonry-grid').masonry({
+		     itemSelector: '.col',
+		     columnWidth: '.col',
+		     // isAnimated: true,
+		     // isFitWidth: true
+		    });
+		});
+		
+		// http://jsfiddle.net/billymoon/a49P4/
+
+
+    }); // document.ready
+        
+      </script>
+  
+  </body>
+</html>
