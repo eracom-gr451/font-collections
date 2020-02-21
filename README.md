@@ -6,11 +6,11 @@ L'objectif de ce projet est d'établir une sélection de fontes libres et open-s
 
 Nous espérons que ces sélections vous seront utiles!
 
-## Voir les collections
+## Voir les collections
 
 Consultez [cette page web](https://eracom-gr451.github.io/font-collections/) qui sert de table des matières.
 
-## Pour en savoir plus
+## Pour en savoir plus
 
 Consultez [le concept initial](CONCEPT.md). Cet exercice fait suite au workshop "[Libre Type Specimens](https://ms-studio.net/workshops/libre-type-specimens/)" réalisé à la HEAD Genève en février 2013.
 
